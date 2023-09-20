@@ -1,0 +1,6 @@
+services:
+  my_event.calculate_budget:
+    class: Drupal\my_event\EventSubscriber\CalculateBudget
+    arguments: ['@entity_type.manager','@config.factory']
+    tags:
+      - { name: event_subscriber }

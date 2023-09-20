@@ -1,0 +1,24 @@
+<div class="type-dashboard">
+  <div class="type-events">
+    {% if type_event is empty  %}
+      <p>No records found!</p>
+    {% else %}
+      <table class="table table-striped table-hover">
+        <thead class="table-primary">
+          <tr>
+            <th>Event Type</th>
+            <th>Number of Events</th>
+          </tr>
+        </thead> 
+        <tbody> 
+        {% for type,event in type_event %} 
+          <tr>
+            <td>{{ type}}</td>
+            <td>{{ event }}</td>
+          </tr>
+        {% endfor %}
+        </tbody>
+      </table>
+    {% endif %}
+  </div>
+</div>

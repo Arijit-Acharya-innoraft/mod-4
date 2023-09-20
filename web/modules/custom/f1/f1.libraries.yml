@@ -1,0 +1,4 @@
+f1_newfield:
+  css:
+    component:
+      css/f1-newfield-widget.css: {}

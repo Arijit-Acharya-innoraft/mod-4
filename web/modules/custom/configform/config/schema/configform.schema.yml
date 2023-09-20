@@ -1,0 +1,16 @@
+my_module.settings:
+  type: config_object
+  label: 'My Module Settings'
+  mapping:
+    fullname:
+      type: string
+      label: 'Full Name'
+    mail:
+      type: string
+      label: 'Email Address'
+    phone_no:
+      type: integer
+      label: 'Phone Number'
+    gender:
+      type: string
+      label: 'Gender'

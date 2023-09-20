@@ -1,0 +1,28 @@
+uuid: d57d42a3-babe-48d4-bf7e-6ba7d0d16f47
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.ce.body
+    - node.type.ce
+  module:
+    - text
+    - user
+_core:
+  default_config_hash: jDkSYugxXX2EXJxrYB6xIY3M2-1ilvHG_ON5t5B9htM
+id: node.ce.default
+targetEntityType: node
+bundle: ce
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden: {  }

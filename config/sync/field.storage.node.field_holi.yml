@@ -1,0 +1,19 @@
+uuid: 6975f36a-4147-4b36-bb75-878bf3e382e2
+langcode: en
+status: true
+dependencies:
+  module:
+    - fieldmodule
+    - node
+id: node.field_holi
+field_name: field_holi
+entity_type: node
+type: field_color
+settings: {  }
+module: fieldmodule
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

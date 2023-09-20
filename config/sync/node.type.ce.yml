@@ -1,0 +1,13 @@
+uuid: 5c658c84-5d15-4ada-86fa-06bb27840b07
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 2Avn0xXpUFHdS7IGiplf5VzM_U9dzz6duyEfIotApVA
+name: Ce
+type: ce
+description: test
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

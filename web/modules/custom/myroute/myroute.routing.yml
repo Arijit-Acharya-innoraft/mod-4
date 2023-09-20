@@ -1,0 +1,18 @@
+myroute.practicing_route:
+  path: '/routeit/practice'
+  defaults: 
+    _controller: 'Drupal\myroute\Controller\MyrouteController::practicingRoute'
+    _title: 'Route Content'
+  requirements:
+    _permission: 'access custom page'
+    _role: administrator + 	content_editor
+
+
+myroute.get_article_no:
+  path: '/campaign/value/{id}'
+  defaults:
+    _controller: 'Drupal\myroute\Controller\MyrouteController::getArticleNo'
+    _title: 'Display Article No'
+  requirements:
+    _permission: 'access content'
+    id: '^[0-9]+$'

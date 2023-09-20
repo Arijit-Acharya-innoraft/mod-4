@@ -1,0 +1,5 @@
+name: F1
+type: module
+core_version_requirement: ^10
+description: 'Field 1'
+custom: Custom package

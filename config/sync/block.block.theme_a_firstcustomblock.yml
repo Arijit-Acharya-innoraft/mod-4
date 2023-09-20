@@ -1,0 +1,25 @@
+uuid: c386d919-2e5d-47d7-a776-703f6a90afe7
+langcode: en
+status: true
+dependencies:
+  module:
+    - myblock
+    - system
+  theme:
+    - theme_a
+id: theme_a_firstcustomblock
+theme: theme_a
+region: header
+weight: 0
+provider: null
+plugin: first_custom_block
+settings:
+  id: first_custom_block
+  label: 'First Custom Block'
+  label_display: visible
+  provider: myblock
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /custom-welcome-page

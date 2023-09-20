@@ -1,0 +1,8 @@
+api_tutorial.example:
+  path: '/api-tutorial'
+  defaults:
+    _title: 'Example'
+    _controller: '\Drupal\api_tutorial\Controller\ApiTutorialController::build'
+  requirements:
+    _permission: 'access content'
+

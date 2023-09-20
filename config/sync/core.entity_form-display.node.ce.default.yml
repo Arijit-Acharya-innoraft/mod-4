@@ -1,0 +1,25 @@
+_core:
+  default_config_hash: mrWDaYgC7Nwbpjyv8QkPfU1-3iYldiiChMeLU6JJ7Zk
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.ce.body
+    - node.type.ce
+  module:
+    - text
+    - user
+id: node.ce.default
+targetEntityType: node
+bundle: ce
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_textarea_with_summary
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+  links:
+    weight: 100
+hidden: {  }

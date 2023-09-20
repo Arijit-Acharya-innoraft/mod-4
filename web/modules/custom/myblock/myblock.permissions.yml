@@ -1,0 +1,10 @@
+view myblock:
+  title: View Myblock.
+  description: View the Myblock module's content.
+access myblock:
+  title: Access Myblock 
+  description: Access Myblock's features.
+administer myblock:
+  title: Access Myblock's settings.
+  description: Access the admin Myblock's setting page.
+  restrict access: true

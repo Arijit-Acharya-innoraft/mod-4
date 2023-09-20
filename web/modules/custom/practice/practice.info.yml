@@ -1,0 +1,5 @@
+name: 'Practice'
+description: 'This module is for practicing various functions.'
+type: module
+core_version_requirement: ^10
+package: 'Custom package'

@@ -1,0 +1,37 @@
+my_menu.normal_menu:
+  path: '/my_menu/testing'
+  defaults:
+    _controller: 'Drupal\my_menu\Controller\FirstController::normalMenu'
+    _title: 'My Menu'
+  requirements: 
+    _permission: 'access content'
+
+my_menu.local_tab_menu:
+  path: '/node/{node}/extra-settings'
+  defaults:
+    _controller: 'Drupal\my_menu\Controller\FirstController::localTask'
+    _title: 'My Menu'
+  requirements: 
+    _permission: 'access content'
+  options:
+    parameters:
+      node:
+        type: 'entity:node'
+
+my_menu.local_actions_menu:
+  path: '/add_link'
+  defaults:
+    _controller: 'Drupal\my_menu\Controller\FirstController::localAction'
+    _title: 'My Menu'
+  requirements: 
+    _permission: 'access content'
+  
+my_menu.conf_form:
+  path: '/my_menu/config_form'
+  defaults:
+    _form: 'Drupal\my_menu\Form\CustomConfigForm'
+    _title: 'Fix Budget'
+  requirements:
+    _permission: 'admin_editor access'
+  
+  

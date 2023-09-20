@@ -1,0 +1,29 @@
+uuid: 16a8b5ff-553b-414b-959c-a33812b8b27e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_er
+    - node.type.article
+    - node.type.ce
+id: node.article.field_er
+field_name: field_er
+entity_type: node
+bundle: article
+label: ER
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      ce: ce
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: page
+field_type: entity_reference

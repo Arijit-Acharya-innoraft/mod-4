@@ -1,0 +1,56 @@
+<?php
+
+use Drupal\Core\Entity\EntityInterface ;
+
+/**
+* Implements hook_mail().
+*/
+function sending_mail_mail($key, &$message, $params) {
+  // $options = array(
+  //   'langcode' => $message['langcode'],
+  // );
+ 
+  // switch ($key) {
+  //   case 'create_article':
+  //     $message['from'] = \Drupal::config('system.site')->get('mail');
+  //     $message['subject'] = t('Article created: @title', array('@title' => $params['node_title']), $options);
+  //     $message['body'][] = $params['message'];
+  //     break;
+  // }
+    switch ($key) {
+      case 'custom_email_key':
+        $message['subject'] = t('Custom Email Subject');
+        $message['body'][] = t('Message: @message', ['@message' => $params['message']]);
+        break;
+    }
+  // }
+
+ }
+
+//  /**
+// * Implements hook_entity_insert().
+// */
+
+// function sending_mail_entity_insert(EntityInterface $entity) {
+
+//   if ($entity->getEntityTypeId() !== 'node' || ($entity->getEntityTypeId() === 'node' && $entity->bundle() !== 'article')) {
+//     return;
+//   }
+//   $mailManager = \Drupal::service('plugin.manager.mail');
+//   $module = 'sending_mail';
+//   $key = 'create_article';
+//   $to = \Drupal::currentUser()->getEmail();
+//   $params['message'] = $entity->get('body')->value;
+//   $params['node_title'] = $entity->label();
+//   $langcode = \Drupal::currentUser()->getPreferredLangcode();
+//   $send = true;
+ 
+//   $result = $mailManager->mail($module, $key, $to, $langcode, $params, NULL, $send);
+//   if ($result['result'] !== true) {
+//     \Drupal::messenger()->addMessage(t('There was a problem sending your message and it was not sent.'), 'error');
+//   }
+//   else {
+//     \Drupal::messenger()->addMessage(t('Your message has been sent.'));
+//   }
+ 
+//  }

@@ -1,0 +1,7 @@
+practice.form:
+  path: '/practice/form'
+  defaults:
+    _form: '\Drupal\practice\Form\PracticeForm'
+    _title: 'Practice Form'
+  requirements:
+    _permission: 'access content'

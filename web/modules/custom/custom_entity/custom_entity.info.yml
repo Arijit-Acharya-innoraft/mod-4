@@ -1,0 +1,6 @@
+name: Custom Entity
+description: 'Stores custom entity' 
+type: module
+core_version_requirement: ^10
+package: Custom package
+configure: entity.custom_entity.collection

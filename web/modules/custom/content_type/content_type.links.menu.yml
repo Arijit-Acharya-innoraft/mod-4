@@ -1,0 +1,5 @@
+entity.content_type.collection:
+  title: 'Custom Entity'
+  parent: system.admin_config_system
+  description: 'Configure example'
+  route_name: entity.content_type.collection

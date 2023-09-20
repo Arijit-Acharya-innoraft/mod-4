@@ -1,0 +1,31 @@
+my_database.display_year:
+  path: '/my_database/display_year'
+  defaults: 
+    _controller: 'Drupal\my_database\Controller\DatabaseController::displayYear'
+    _title: 'Events per year'
+  requirements: 
+    _permission: 'access content'
+
+my_database.display_quarterly:
+  path: '/my_database/display_qtr'
+  defaults: 
+    _controller: 'Drupal\my_database\Controller\DatabaseController::displayQtr'
+    _title: 'Events per quarter'
+  requirements: 
+    _permission: 'access content'
+
+my_database.display_type:
+  path: '/my_database/display_type'
+  defaults: 
+    _controller: 'Drupal\my_database\Controller\DatabaseController::displayType'
+    _title: 'Events per types'
+  requirements: 
+    _permission: 'access content'
+
+my_database.taxonomy_term:
+  path: /my_database/taxonomy_term
+  defaults:
+    _form: 'Drupal\my_database\Form\TaxonomyForm'
+    _title: 'Only Taxonomy term accepted'
+  requirements:
+    _permission: 'access content'

@@ -1,0 +1,97 @@
+<?php
+
+  use Drupal\views\ViewExecutable;
+  use Drupal\views\Plugin\views\query\QueryPluginBase;
+  /**
+   * Implements hook_views_query_alter().
+   */
+  function my_view_views_query_alter(ViewExecutable $view, QueryPluginBase $query) {
+
+    // Check if the view ID matches the view you want to alter.
+    if ($view->id() == 'custom_view') {
+      $sort = &$query->orderby;
+      $sort[0]['field'] = 'title';
+      $sort[0]['direction'] = 'ASC';
+
+    }
+  }
+
+  function my_view_views_data_alter(array &$data) {
+    // dd($data['users_field_data']);
+    // For defining the relationship.
+    $data['node_field_data']['user_relationship'] = [
+      'title' => 'Custom relation',
+      'help' => 'Addition of custom relation',
+      'relationship' =>[
+        // Table where we are adding the relationship
+        'base'=>'users_field_data',
+        // Field in the base table used for establishing the relationship.
+        'base_field' => 'uid',
+        // Field in the current table that corresponds to the base field in the relationship.
+        'field' => 'uid',
+        // This is an identifier for the relationship.
+        'id' => 'standard',
+        // This specifies the handler class that will be used to handle this relationship. 
+        'handler' => 'views_handler_relationship',
+        // This is the label that will be displayed for this relationship in the Views UI. 
+        'label' => 'Custom Relationship',
+      ],
+    ];
+
+    // Displaying data in the field section.
+    $data['users_field_data']['name'] = [
+      'title' => 'Custom User Name',
+      'help' => 'Content Author',
+      'field' => [
+        'id' => 'standard',
+        'relationship' => [
+          'id' => 'user_relationship',
+        ]
+      ]
+    ];
+ 
+    $data['users_field_data']['uid'] = [
+      'title' => ('Custom User UID'),
+      'help' => ('Content Author'),
+      'field' => [
+        'id' => 'standard',
+        'relationship' => [
+          'id' => 'user_relationship',
+        ]
+      ]
+    ];
+
+    $data['users_field_data']['mail'] = [
+      'title' => ('Custom User mail'),
+      'help' => ('Content Author'),
+      'field' => [
+        'id' => 'standard',
+        'relationship' => [
+          'id' => 'user_relationship',
+        ]
+      ]
+    ];
+
+
+    // For adding filter
+    $data['node_field_data']['custom_filter'] = [
+      'title' => 'Filter by name',
+      'help' => 'Filtering data',
+      'filter' => [
+        'field' => 'created',
+        'id' => 'standard',
+        'handler' => 'views_handler_filter',
+        'accept operator' => true, // Specify what operators are available for filtering.
+        'label' => t('Custom Created Filter'), // Optional label for the filter.
+      ],
+    ];
+  }
+
+function my_view_views_pre_view(ViewExecutable $view, $display_id) {
+  if($view->id()=='custom_view') {
+    $name = isset($_GET['username']) ? $_GET['username'] : null;
+    if($name){
+      $view->setExposedInput(['username' => "$name"]);
+    }
+  }
+}

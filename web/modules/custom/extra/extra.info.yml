@@ -1,0 +1,5 @@
+name: 'Extra'
+description: 'This module is for performing the extra tasks'
+core_version_requirement: ^10
+type: module
+package: 'Custom Package'

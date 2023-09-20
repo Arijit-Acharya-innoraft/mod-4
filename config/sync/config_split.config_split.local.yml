@@ -1,0 +1,19 @@
+uuid: 2740d4eb-7347-4796-9667-f094e6d76aa0
+langcode: en
+status: false
+dependencies: {  }
+id: local
+label: Local
+description: ''
+weight: 0
+folder: ../config/local
+module:
+  devel: 0
+  field_ui: 0
+  views_ui: 0
+theme: {  }
+blacklist:
+  - system.site
+graylist: {  }
+graylist_dependents: true
+graylist_skip_equal: true

@@ -1,0 +1,18 @@
+uuid: cf9924d9-d21d-496b-883a-fe0f88abad58
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Events performed'
+type: events_performed
+description: 'Name of events'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

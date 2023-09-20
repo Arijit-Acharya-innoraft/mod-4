@@ -1,0 +1,25 @@
+uuid: 90f58c81-2dc0-4aa9-bba3-23793ce39922
+langcode: en
+status: true
+dependencies:
+  module:
+    - myblock
+    - system
+  theme:
+    - bootstrap5
+id: bootstrap5_firstcustomblock
+theme: bootstrap5
+region: breadcrumb
+weight: 0
+provider: null
+plugin: first_custom_block
+settings:
+  id: first_custom_block
+  label: 'First Custom Block'
+  label_display: visible
+  provider: myblock
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /custom-welcome-page

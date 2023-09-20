@@ -1,0 +1,7 @@
+myblock.customblock:
+  path: '/custom-welcome-page'
+  defaults:
+    _controller: 'Drupal\myblock\Controller\BlockPage::pageDisplay'
+    _tite: 'Custom Block Title'
+  requirements:
+    _permission: 'access content'

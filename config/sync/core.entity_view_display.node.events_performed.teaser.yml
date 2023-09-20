@@ -1,0 +1,22 @@
+uuid: 4d7fbdf4-0e0d-4a9f-b95a-fdee9ea12ef4
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.events_performed.field_event_name
+    - node.type.events_performed
+  module:
+    - user
+id: node.events_performed.teaser
+targetEntityType: node
+bundle: events_performed
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_event_name: true

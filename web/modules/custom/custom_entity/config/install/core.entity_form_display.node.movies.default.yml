@@ -1,0 +1,42 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.movies.body
+    - field.field.node.movies.field_movie_price
+    - node.type.movies
+  module:
+    - text
+    - user
+id: node.movies.default
+targetEntityType: node
+bundle: movies
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_movie_price:
+    weight: 6
+    settings:
+      size: 60
+      placeholder: ''
+    type: number_decimal
+    third_party_settings: {  }
+    region: content
+  field_movie_image:
+    weight: 5
+    settings:
+      alt: ''
+    type: image
+    third_party_settings: {  }
+    region: content
+    
+  links:
+    weight: 100
+    region: content
+hidden: {  }

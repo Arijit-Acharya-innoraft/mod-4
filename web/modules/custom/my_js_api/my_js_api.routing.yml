@@ -1,0 +1,7 @@
+my_js_api.simpleform:
+  path: '/ph/form'
+  defaults: 
+    _form: 'Drupal\my_js_api\Form\MyJsApi'
+    _title: 'Form Title'
+  requirements: 
+    _permission: 'access content' 

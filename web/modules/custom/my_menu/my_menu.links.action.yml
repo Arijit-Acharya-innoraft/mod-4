@@ -1,0 +1,5 @@
+my_menu.link_add:
+  route_name: my_menu.local_actions_menu
+  title: 'Add Link'
+  appears_on:
+    - my_menu.local_tab_menu

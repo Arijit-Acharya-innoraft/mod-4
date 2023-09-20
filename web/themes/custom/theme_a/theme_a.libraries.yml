@@ -1,0 +1,30 @@
+# global-styling:
+#   css:
+#     component:
+#     css/style.css: {}
+   
+#   dependencies:
+#     - core/drupal
+#     - core/jquery
+#     - core/once
+
+# slick:
+#   version: VERSION
+#   css:
+#     theme:
+#       //cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css: {type: external}
+#       //cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css: {type: external} 
+#   js:
+#     //cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js: {type: external}
+#     js/slider.js: {}
+  
+#   dependencies:
+#     - core/once
+#     - core/jquery
+#     - core/drupalSettings
+
+# node:
+#   version: VERSION
+#   css:
+#     theme:
+#       css/node.css: {} 

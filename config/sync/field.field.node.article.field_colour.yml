@@ -1,0 +1,21 @@
+uuid: ed9455ec-47e0-4356-a05e-b312260b25b8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_colour
+    - node.type.article
+  module:
+    - fieldmodule
+id: node.article.field_colour
+field_name: field_colour
+entity_type: node
+bundle: article
+label: 'Coloured Text'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: field_color

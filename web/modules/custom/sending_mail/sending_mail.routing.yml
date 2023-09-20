@@ -1,0 +1,7 @@
+sm.f:
+  path: '/aj/f'
+  defaults:
+    _form: 'Drupal\sending_mail\Form\AjaxForm'
+    _title: 'T'
+  requirements:
+    _permission: 'access content'

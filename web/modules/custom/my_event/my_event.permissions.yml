@@ -1,0 +1,9 @@
+view configform:
+  title: 'View configform.'
+  description: 'View the configform modules content.'
+access configform:
+  title: 'Access configform '
+  description: 'Access configform features.'
+admin_editor access:
+  title: 'Access configforms settings.'
+  description: 'Access the admin configforms setting page.'

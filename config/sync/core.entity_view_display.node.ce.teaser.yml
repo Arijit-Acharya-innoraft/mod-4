@@ -1,0 +1,30 @@
+uuid: 56c6c9d4-9a4a-439b-b369-c089a814cab7
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.ce.body
+    - node.type.ce
+  module:
+    - text
+    - user
+_core:
+  default_config_hash: WAC9OufGFG4066KBX1zMOoA59asVg9r1e4n-SSs0GKo
+id: node.ce.teaser
+targetEntityType: node
+bundle: ce
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden: {  }

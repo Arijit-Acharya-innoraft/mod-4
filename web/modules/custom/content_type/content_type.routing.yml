@@ -1,0 +1,32 @@
+entity.content_type.collection:
+  path: '/admin/config/system/example'
+  defaults:
+    _entity_list: 'content_type'
+    _title: 'Custom Entity configuration'
+  requirements:
+    _permission: 'administer content_type'
+
+entity.content_type.add_form:
+  path: '/admin/config/system/example/add'
+  defaults:
+    _entity_form: 'content_type.add'
+    _title: 'Add Custom Entity'
+  requirements:
+    _permission: 'administer content_type'
+
+entity.content_type.edit_form:
+  path: '/admin/config/system/content_type/{content_type}'
+  defaults:
+    _entity_form: 'content_type.edit'
+    _title: 'Edit Custom Entity'
+  requirements:
+    _permission: 'administer content_type'
+
+entity.content_type.delete_form:
+  path: '/admin/config/system/content_type/{content_type}/delete'
+  defaults:
+    _entity_form: 'content_type.delete'
+    _title: 'Delete Custom Entity'
+  requirements:
+    _permission: 'administer content_type'
+  

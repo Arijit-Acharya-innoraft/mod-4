@@ -1,0 +1,13 @@
+view myroute:
+  title: View my module.
+  description: View the my module module's content.
+custom page myroute:
+  title: View custom Page
+  description: Allow to view custom page.
+access myroute:
+  title: Access mymodule 
+  description: Access mymodule's features.
+administer myroute:
+  title: Access myomdule's settings.
+  description: Access the admin mymodule's setting page.
+  restrict access: true

@@ -1,0 +1,5 @@
+name: Event
+description: 'Addition of custom Event'
+package: Custom package
+type: module
+core_version_requirement: ^10

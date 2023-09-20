@@ -1,0 +1,19 @@
+uuid: 1c78ca68-1291-47cb-a35a-0cfec78f3a36
+langcode: en
+status: true
+dependencies:
+  module:
+    - fieldmodule
+    - node
+id: node.field_colour
+field_name: field_colour
+entity_type: node
+type: field_color
+settings: {  }
+module: fieldmodule
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

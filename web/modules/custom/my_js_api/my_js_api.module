@@ -1,0 +1,8 @@
+<?php
+
+function my_js_api_preprocess_page(&$variable) {
+  $variable['#attached']['library'][] = 'my_js_api/php-to-js';
+  $account  = Drupal\user\Entity\User::load(\Drupal::currentUser()->id());
+  $user = $account->get('name')->value;
+  $variable['#attached']['drupalSettings']['employee']['current_user'] = $user;
+}

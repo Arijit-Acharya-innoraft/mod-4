@@ -1,0 +1,20 @@
+uuid: 9cb68d62-0324-44f8-b92e-b3a2119f89d4
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+_core:
+  default_config_hash: MIGc9a8YWjPCCR3g_wk-vA1w8Fht1fESJ2EDI1ws63k
+name: Movies
+type: movies
+description: 'Stores different info of movies'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

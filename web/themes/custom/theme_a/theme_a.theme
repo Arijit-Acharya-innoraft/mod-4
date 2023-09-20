@@ -1,0 +1,7 @@
+<?php
+// 
+function theme_a_theme_suggestions_alter(array &$suggestions, array $variables, $hook) {
+ 
+  if ($hook == 'node') 
+    $suggestions[] = 'node__custom_render';
+}

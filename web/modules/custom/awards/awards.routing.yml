@@ -1,0 +1,32 @@
+entity.awards.collection:
+  path: '/admin/config/system/awards'
+  defaults:
+    _entity_list: 'awards'
+    _title: 'Awards configuration'
+  requirements:
+    _permission: 'administer site configuration'
+
+entity.awards.add_form:
+  path: '/admin/config/system/awards/add'
+  defaults:
+    _entity_form: 'awards.add'
+    _title: 'Add Award'
+  requirements:
+    _permission: 'administer site configuration'
+
+entity.awards.edit_form:
+  path: '/admin/config/system/awards/{awards}'
+  defaults:
+    _entity_form: 'awards.edit'
+    _title: 'Edit Award'
+  requirements:
+    _permission: 'administer site configuration'
+
+entity.awards.delete_form:
+  path: '/admin/config/system/awards/{awards}/delete'
+  defaults:
+    _entity_form: 'awards.delete'
+    _title: 'Delete Award'
+  requirements:
+    _permission: 'administer site configuration'
+    

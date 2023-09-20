@@ -1,0 +1,7 @@
+php-to-js:
+  js:
+    js/MyJsApi.js: {}
+  dependencies:
+    - core/drupal
+    - core/jquery
+    - core/once

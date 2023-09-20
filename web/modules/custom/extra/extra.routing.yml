@@ -1,0 +1,16 @@
+extra.conditional_form:
+  path: '/extra/form'
+  defaults: 
+    _title : 'Conditional Form Field'
+    _form: 'Drupal\extra\Form\ConditionalFormField'
+  requirements:
+    _permission: 'access_content'
+
+extra.another_form:
+  path: '/extra/another_form'
+  defaults:
+    _form: 'Drupal\extra\Form\AnotherForm'
+    _title: 'Another Field'
+  requirements:
+    _permission: 'access content'
+    

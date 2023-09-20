@@ -1,0 +1,8 @@
+uuid: f85746a1-9ae3-40d5-a253-5c5a54659327
+langcode: en
+status: true
+dependencies: {  }
+name: Alphabets
+vid: alphabets
+description: 'Contains capital letters only'
+weight: 0

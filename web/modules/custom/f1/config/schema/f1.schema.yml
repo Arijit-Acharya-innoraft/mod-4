@@ -1,0 +1,50 @@
+# Field storage.
+field.storage_settings.f1_newfield:
+  type: mapping
+  label: Example storage settings
+  mapping:
+    foo:
+      type: string
+      label: Foo
+
+# Field instance.
+field.field_settings.f1_newfield:
+  type: mapping
+  label: Example field settings
+  mapping:
+    bar:
+      type: string
+      label: Bar
+
+# Default value.
+field.value.f1_newfield:
+  type: mapping
+  label: Default value
+  mapping:
+    value_1:
+      type: string
+      label: Value 1
+    value_2:
+      type: integer
+      label: Value 2
+    value_3:
+      type: boolean
+      label: Value 3
+
+# Field widget.
+field.widget.settings.f1_newfield:
+  type: mapping
+  label: Example widget settings
+  mapping:
+    foo:
+      type: string
+      label: Foo
+
+# Field formatter.
+field.formatter.settings.f1_newfield_default:
+  type: mapping
+  label: Example formatter settings
+  mapping:
+    foo:
+      type: string
+      label: Foo

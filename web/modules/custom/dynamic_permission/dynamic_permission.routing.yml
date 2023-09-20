@@ -1,0 +1,14 @@
+dynamic_access.dynamicdemo:
+  path: '/dynamic/{node}/page'
+  defaults:
+    _controller: '\Drupal\dynamic_permission\Controller\PageController::NodeData'
+    _title_callback: '\Drupal\dynamic_permission\Controller\PageController::PageTitle'
+  requirements:
+    _custom_access: '\Drupal\dynamic_permission\Controller\PageController::accessController'
+  options:
+    parameters:
+      node:
+        type: entity:node
+
+
+

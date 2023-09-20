@@ -1,0 +1,14 @@
+services:
+  myservice.with_service:
+    class: Drupal\myservice\Service\WithService
+    arguments:  ['@current_user']
+
+  myservice.block_visibiity:
+    class: Drupal\myservice\Service\BlockVisibility
+    arguments: ['@current_route_match']
+
+  myservice.redirect_route:
+    class: Drupal\myservice\EventSubscriber\RedirectRoute
+    arguments: ['@request_stack']
+    tags:
+      - { name: event_subscriber }

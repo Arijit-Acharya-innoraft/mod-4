@@ -1,0 +1,7 @@
+my_event.admin_menu_link:
+  title: 'Event Budget Form'
+  description: 'Creating a config form for storing a budget friendly mount'
+  weight: 6
+  route_name: my_event.conf_form
+  menu_name: admin
+  

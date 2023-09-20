@@ -1,0 +1,5 @@
+name: Field module
+description: 'Implements custom field module'
+core_version_requirement: ^10
+package: Custom package
+type: module

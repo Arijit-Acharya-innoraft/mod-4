@@ -1,0 +1,27 @@
+<?php
+use Drupal\Core\Entity\EntityInterface;
+ // Implementation of hook_ENTITY_TYPE_presave().
+ function my_menu_node_presave(EntityInterface $entity) {
+  // Check if the entity is a node of the desired content type.
+  if ($entity->getEntityTypeId() == 'node' && $entity->bundle() == 'article') {
+    // Retrieve the default subtraction value from the configuration.
+    $config = \Drupal::config('my_menu.settings');
+    $value = $config->get('budget');
+
+    // Perform subtraction and update the field value.
+    $price_field_value = $entity->get('field_price')->getValue()[0]['value'];
+    $price_diff =  $value - $price_field_value ;
+    $string = '';
+    if($price_diff > 0) {
+      $string = 'The movie is under budget';
+    }
+    elseif($price_diff < 0) {
+      $string = 'The movie is over budget';
+    }
+    else {
+      $string = 'The movie is within budget';
+    }
+     $entity->set('field_output', $string);
+  }
+  
+}

@@ -1,0 +1,17 @@
+my_memu.main_menu_links:
+  title: 'test'
+  description:  'This is for testing the menu in the list'
+  weight: 1
+  route_name: my_menu.normal_menu
+  menu_name: main
+  options:
+    attributes:
+      target: _blank
+
+my_menu.admin_menu_link:
+  title: 'Budget Form'
+  description: 'Creating a config form for storing a budget friendly mount'
+  weight: 6
+  route_name: my_menu.conf_form
+  menu_name: admin
+  

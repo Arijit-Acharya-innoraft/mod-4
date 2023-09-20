@@ -1,0 +1,29 @@
+uuid: 73c126e5-0ea5-4e6f-82a4-eb3e294e880a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_alphabets
+    - node.type.events
+    - taxonomy.vocabulary.alphabets
+id: node.events.field_alphabets
+field_name: field_alphabets
+entity_type: node
+bundle: events
+label: Alphabets
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      alphabets: alphabets
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

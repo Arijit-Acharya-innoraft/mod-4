@@ -1,0 +1,23 @@
+# field.field.node.movies.field_movie_price.yml
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_movie_image
+    - node.type.movies
+  module:
+    - text
+id: node.movies.field_movie_image
+field_name: field_movie_image
+entity_type: node
+bundle: movies
+label: 'Movie Image'
+description: 'More specific information about the movie price'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+field_type: image
+settings: 
+  display_summary: false
+  

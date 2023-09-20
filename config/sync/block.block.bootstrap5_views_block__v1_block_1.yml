@@ -1,0 +1,29 @@
+uuid: 7572d79f-1553-4bf2-aa7d-4068c7ffa6a1
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.v1
+  module:
+    - system
+    - views
+  theme:
+    - bootstrap5
+id: bootstrap5_views_block__v1_block_1
+theme: bootstrap5
+region: content
+weight: -7
+provider: null
+plugin: 'views_block:v1-block_1'
+settings:
+  id: 'views_block:v1-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

@@ -1,0 +1,7 @@
+myservice.service_controller :
+  path: '/myservice/demo'
+  defaults: 
+    _controller: 'Drupal\myservice\Controller\ServiceController'
+    _title: 'With Service'
+  requirements:
+    _permission: 'access content'

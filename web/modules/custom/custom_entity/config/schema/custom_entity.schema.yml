@@ -1,0 +1,14 @@
+custom_entity.custom_entity.*:
+  type: config_entity
+  label: Custom Entity
+  mapping:
+    id:
+      type: string
+      label: ID
+    label:
+      type: label
+      label: Label
+    uuid:
+      type: string
+    description:
+      type: string

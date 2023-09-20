@@ -1,0 +1,31 @@
+entity.ce.collection:
+  path: '/admin/structure/ce'
+  defaults:
+    _entity_list: 'ce'
+    _title: 'Ce configuration'
+  requirements:
+    _permission: 'administer ce'
+
+entity.ce.add_form:
+  path: '/admin/structure/ce/add'
+  defaults:
+    _entity_form: 'ce.add'
+    _title: 'Add a ce'
+  requirements:
+    _permission: 'administer ce'
+
+entity.ce.edit_form:
+  path: '/admin/structure/ce/{ce}'
+  defaults:
+    _entity_form: 'ce.edit'
+    _title: 'Edit a ce'
+  requirements:
+    _permission: 'administer ce'
+
+entity.ce.delete_form:
+  path: '/admin/structure/ce/{ce}/delete'
+  defaults:
+    _entity_form: 'ce.delete'
+    _title: 'Delete a ce'
+  requirements:
+    _permission: 'administer ce'

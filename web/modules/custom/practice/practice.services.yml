@@ -1,0 +1,4 @@
+services:
+  practice.dbinsert:
+    class: Drupal\practice\Services\DbInsert
+    arguments: ['@database']

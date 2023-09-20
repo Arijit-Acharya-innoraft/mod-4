@@ -1,0 +1,16 @@
+uuid: acdb5ed6-c338-4da9-8174-dcac2df7eb6f
+langcode: en
+status: true
+dependencies: {  }
+id: development
+label: Development
+description: ''
+weight: 0
+folder: ../config/development
+module: {  }
+theme: {  }
+blacklist:
+  - system.site
+graylist: {  }
+graylist_dependents: true
+graylist_skip_equal: true

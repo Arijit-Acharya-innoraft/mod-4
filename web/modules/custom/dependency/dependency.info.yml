@@ -1,0 +1,5 @@
+name: dependency
+description: 'To implment dependency'
+type: module
+core_version_requirement: ^10
+package: Custom package

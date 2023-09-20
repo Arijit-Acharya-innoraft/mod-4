@@ -1,0 +1,7 @@
+dependency.service_controller:
+  path: '/dependency/demo'
+  defaults: 
+    _controller: 'Drupal\dependency\Controller\ServiceController::pageDisplay'
+    _title: 'With Service'
+  requirements:
+    _permission: 'access content'

@@ -1,0 +1,10 @@
+view content_type:
+  title: View my module.
+  description: View the my module module's content.
+access content_type:
+  title: Access mymodule 
+  description: Access mymodule's features.
+administer content_type:
+  title: Access myomdule's settings.
+  description: Access the admin mymodule's setting page.
+  restrict access: true

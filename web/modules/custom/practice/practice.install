@@ -1,0 +1,47 @@
+<?php
+
+use Symfony\Component\Validator\Constraints\NotNull;
+
+use function PHPSTORM_META\type;
+
+/**
+ * Implement hook_schema(). 
+ */
+
+ function practice_schema() {
+
+    $schema['practice_form'] =array(
+      'fields' => array(
+        'id' => array(
+          'description' => 'Stores the id of the student',
+          'type'=> 'serial',
+          'unsigned'=> TRUE,
+          'not null'=> TRUE 
+        ),
+        'mail' =>array(
+          'description' => 'Stores the mail address of the student',
+          'type'=> 'varchar',
+          'length'=> 255,
+          'not null' => TRUE,
+          'default' => ''
+        ),
+        'name' => array(
+          'description' => 'Stores the name of the student',
+          'type' => 'varchar',
+          'length' => 255,
+          'not null' => TRUE,
+          'default' => ''
+        ),
+        'password'=> array(
+          'description' => 'Password of the account',
+          'type' => 'varchar',
+          'length'=> '50',
+          'not null' => TRUE
+        )
+      ),
+      'primary key' =>array('id')
+    );
+    return $schema;
+ }
+
+?>

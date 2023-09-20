@@ -1,0 +1,9 @@
+my_event.conf_form: 
+  path: '/my_event/conf_form'
+  defaults:
+    _title: 'Using Events'
+    _form: 'Drupal\my_event\Form\CustomConfigForm'
+  requirements:
+    _permission: 'admin_editor access'
+  
+  

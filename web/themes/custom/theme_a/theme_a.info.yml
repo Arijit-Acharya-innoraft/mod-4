@@ -1,0 +1,19 @@
+name: Theme A
+description: 'First Custom Theme'
+type: theme
+package: Custom theme
+core_version_requirement: ^10
+base theme : bootstrap5
+libraries:
+  # - theme_a/global-styling
+  # - theme_a/slick
+regions:
+  header: 'Header'
+  breadcrumb: 'Breadcrumb'
+  featured: 'Featured'
+  content: 'Content'
+  sidebar_first: 'First sidebar'
+  sidebar_second: 'Second sidebar'
+  footer: 'Footer'
+
+  

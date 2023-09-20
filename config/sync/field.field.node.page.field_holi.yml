@@ -1,0 +1,21 @@
+uuid: 60f18171-21c5-4bf9-b480-c00ceca2ad63
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_holi
+    - node.type.page
+  module:
+    - fieldmodule
+id: node.page.field_holi
+field_name: field_holi
+entity_type: node
+bundle: page
+label: Holi
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: field_color

@@ -1,0 +1,5 @@
+name: Sending mail
+description: 'Sending mail'
+type: module
+core_version_requirement: ^10
+package: Custom package

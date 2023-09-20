@@ -1,0 +1,5 @@
+name: Menu
+description: 'Displays the custom menu created.'
+type: module
+package: Custom package
+core_version_requirement: ^10

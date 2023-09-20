@@ -1,0 +1,5 @@
+name: Config Entity
+type: module
+core_version_requirement: ^10
+package: Custom package
+configure: entity.ce.collection

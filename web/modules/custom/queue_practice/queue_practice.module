@@ -1,0 +1,20 @@
+<?php
+
+/**
+ * @file
+ * Primary module hooks for queue-practice module.
+ */
+
+
+ function custom_queue_example_cron() {
+  // Define the queue.
+  $queue = \Drupal::queue('custom_queue_example_queue');
+
+  // Get all user IDs.
+  $uids = \Drupal::entityQuery('user')->execute();
+
+  // Add each user to the queue.
+  foreach ($uids as $uid) {
+    $queue->createItem($uid);
+  }
+}

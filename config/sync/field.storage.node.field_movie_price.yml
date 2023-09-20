@@ -1,0 +1,22 @@
+uuid: beeaa8f8-1229-4ae0-8bf5-b3492d26b7e4
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: p7L8mdG-AyVtWZJ766PSqaY2iPZhT91TyIrZZdLw35E
+id: node.field_movie_price
+field_name: field_movie_price
+entity_type: node
+type: decimal
+settings:
+  precision: 10
+  scale: 2
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

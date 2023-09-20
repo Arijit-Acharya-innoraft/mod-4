@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_movies_price
+    - node.type.movies
+id: node.movies.field_movies_price
+field_name: field_movies_price
+entity_type: node
+bundle: movies
+label: 'Movie price'
+description: 'Tells about the creation price of  the movie .'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 0.0
+  max: null
+  prefix: ₹
+  suffix: cr
+field_type: decimal

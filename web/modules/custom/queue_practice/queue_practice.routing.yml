@@ -1,0 +1,8 @@
+queue_practice.example:
+  path: '/queue-practice/example'
+  defaults:
+    _title: 'Example'
+    _controller: '\Drupal\queue_practice\Controller\QueuePracticeController::build'
+  requirements:
+    _permission: 'access content'
+

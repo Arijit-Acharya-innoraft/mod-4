@@ -1,0 +1,5 @@
+entity.awards.collection:
+  title: 'Awards'
+  parent: system.admin_config_system
+  description: 'Configure Awards'
+  route_name: entity.awards.collection

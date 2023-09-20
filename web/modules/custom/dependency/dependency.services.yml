@@ -1,0 +1,14 @@
+services:
+  dependency.with_service:
+    class: Drupal\dependency\Services\WithService
+    arguments:  ['@current_user']
+
+  dependency.block_visibility:
+    class: Drupal\dependency\Services\BlockPermission
+    arguments: ['@current_route_match']
+
+  dependency.redirect_route:
+    class: Drupal\dependency\EventSubscriber\RedirectRoute
+    arguments: ['@request_stack']
+    tags:
+      - { name: event_subscriber }

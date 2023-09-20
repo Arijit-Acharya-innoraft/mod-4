@@ -1,0 +1,5 @@
+name: Awards
+description: 'Manages example configuration.'
+package: Custom package
+type: module
+core_version_requirement: ^10

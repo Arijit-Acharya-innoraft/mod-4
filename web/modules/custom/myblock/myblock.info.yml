@@ -1,0 +1,5 @@
+name: 'My Block'
+description: 'Implements the custom built in module.'
+package: 'Custom package'
+core_version_requirement: ^10
+type: 'module'

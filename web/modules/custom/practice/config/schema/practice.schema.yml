@@ -1,0 +1,12 @@
+practice_advertiser:
+  type: entity
+  label: 'Advertiser entity'
+  base_table: advertiser
+  entity_keys:
+    id:
+      type: serial
+      not null: true
+      description: 'The primary identifier for the advertiser entity.'
+  uuid:
+    type: uuid
+    description: 'The UUID of the advertiser entity.'
